@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge One Codificador 3</title>
+        <!-- <link rel="stylesheet" href="assets/reset.css"> -->
+        <link rel="stylesheet" href="assets/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="cuerpo">
+
+            <header>
+                <a href="index.html">
+                    <img class="logoAlura" src="assets/images/Logo.png" alt="Logo de Alura">
+                </a>
+            </header>
+        
+            <main>
+        
+                <section class="codificador">
+                    <textarea id="paste" class="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea>
+                    <p class="aviso"><img class="simbolo" src="assets/images/simbolo.png" alt="Simbolo de exclamación"> Solo letras minúsculas y sin acentos</p>
+                    <div class="contenedor-botones">
+                        <button class="codificar" onclick="btnCodificar()">Encriptar</button>
+                        <button class="decodificar" onclick="btnDescodificar()">Desencriptar</button>
+                    </div>
+                    <div class="botones-extra">
+                        <button class="reiniciar" onclick="window.location.href = 'index.html';">Reiniciar</button>
+                        <button class="pegar" onclick="btnPegar()">Pegar</button>
+                    </div>
+                    
+                </section>
+        
+                <section class="decodificador">
+                    <div id="inicio">
+                        <div class="contenedor-imagen">
+                            <img src="assets/images/muneco.png" alt="Muñeco de Alura">
+                        </div>
+    
+                        <div class="contenedor-texto">
+                            <h2 class="h2Titulo">Ningún mensaje fue encontrado</h2>
+                            <p class="pBajada">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                    <div id="resultado">
+                        <textarea class="texto-copiado"></textarea>
+                    
+                        <div class="contenedor-botones">
+                            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+                        </div>
+                    </div>
+                    
+                </section>
+        
+            </main>
+        
+            <footer>
+        
+                <p class="texto_footer">&copy Sitio desarrollado por <a href="https://www.Williams.me" target="blank"> Williams Estrada</a> para el <a href="https://app.aluracursos.com/user/WilliamsEstrada" target="blank">"Challenge One Codificador 6"</a> de Alura Latam 2024.</p>
+        
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
